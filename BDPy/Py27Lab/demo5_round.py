@@ -1,0 +1,5 @@
+print (round(2.1), round(3.1), round(4.1), round(5.1))
+print (round(2.4), round(3.4), round(4.4), round(5.4))
+print (round(2.5), round(3.5), round(4.5), round(5.5))
+print (round(2.6), round(3.6), round(4.6), round(5.6))
+print(round(1357.5), round(246.5), round(1357.4), round(246.6))
