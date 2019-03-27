@@ -1,0 +1,43 @@
+l1 = list("ABCDEFG1234567")
+l2 = list("ABCDEFG1234567" * 2)
+l1[0] = '*'
+print l1
+l1[:5] = '!' * 3
+print l1
+del l1[:5]
+print l1
+l2[::2] = '%' * len(l2[::2])
+print l2
+del l2[1::2]
+#del l2[::2]
+print l2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+a1 = list('ABCDE')
+a2 = list('abcde')
+a1.append(a2)
+print a1
+a3 = list('ABCDE')
+a4 = list('abcde')
+a3.extend(a4)
+print a3
+a5 = list('ABCDE')
+a6 = list('abcde')
+a5 += a6
+print a5
+a5.reverse()
+print a5
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+import numpy
+
+r = 4
+a = r * r * numpy.pi
+print '[1]radius=%f, area=%f' % (r, a)
+print '[2]radius=%.3f, area=%.3f' % (r, a)
+print '[3]radius=%(radius).3f, area=%(area).3f' % {'radius': r, 'area': a}
+print '[4]radius=%(radius).3f, area=%(area).3f' % {'area': a, 'radius': r}
+print '[5]radius={}, area={}'.format(r, a)
+print '[6]radius={:.3f}, area={:.3f}'.format(r, a)
+print '[7]radius={1:.3f}, area={0:.3f}'.format(a, r)
+print '[8]sradius={radius:.3f}, area={area:.3f}'.format(radius=r, area=a)
+

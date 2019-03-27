@@ -1,0 +1,158 @@
+v1 = 'hello world'
+v2 = "welcome"
+v3 = '''
+java
+c#
+python
+'''
+print type(v1), len(v1), v1
+print type(v2), len(v2), v2
+print type(v3), len(v3), v3
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+v1 = 'hello world'
+v2 = "welcome"
+v3 = '''
+java
+c#
+python
+'''
+print(type(v1), len(v1), v1)
+print(type(v2), len(v2), v2)
+print(type(v3), len(v3), v3)
+~~~~~~~~~~~~p2~~~~~~~~~~~~~~~~~
+# encoding=UTF-8
+v1 = u'hello world'
+v2 = "welcome"
+v3 = '''
+java
+c#
+python
+'''
+v4 = '中文'
+v5 = u'中文'
+print type(v1), len(v1), v1
+print type(v2), len(v2), v2
+print type(v3), len(v3), v3
+print type(v4), len(v4), v4
+print type(v5), len(v5), v4
+
+~~~~~~~~~~~~~~~p3~~~~~~~~~~~~~~~~~~~
+v1 = b'hello world'
+v2 = "welcome"
+v3 = '''
+java
+c#
+python
+'''
+v4 = '中文'
+print(type(v1), len(v1), v1)
+print(type(v2), len(v2), v2)
+print(type(v3), len(v3), v3)
+print(type(v4), len(v4), v4)
+~~~~~~~~~~~~~~~~~~~~~
+>>> v4 = '中文'
+>>> len(v4)
+4
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+print (2 ** 5, 3 ** 5, 4 ** 5, 5 ** 5)
+print(5 ** 2, 5 ** 3, 5 ** 4, 5 ** 5)
+print(2 ^ 5, 3 ^ 5, 4 ^ 5, 5 ^ 5)
+print(5 ^ 2, 5 ^ 3, 5 ^ 4, 5 ^ 5)
+
+print('{:04b},{:04b},{:04b},{:04b}'.format(2, 3, 4, 5))
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c1 = 5 - 4j
+c2 = 3 + 5j
+print c1 + c2, c1 - c2, c1 * c2, c1 / c2
+print abs(c1), abs(c2)
+print c1.conjugate(), c2.conjugate()
+x=c1**2
+print x, x.real, x.imag
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+from fractions import Fraction
+
+ans1 = Fraction(250, 72)
+print ans1
+ans2 = Fraction(5, 3) + Fraction(11, 7) + Fraction(14, 3)
+print ans2
+ans3 = Fraction(13509,9)
+print ans3.numerator, ans3.denominator
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+from decimal import Decimal as Dec
+
+print 5
+print Dec(5)
+print 0.2
+print Dec(0.2)
+print Dec(2.968)
+print Dec('2.968')
+print Dec(2968)*Dec(0.001)-Dec(2.968)
+print Dec(2968)*Dec('0.001')-Dec('2.968')
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+a = 5
+b = 7
+print 'before, a=', a, ' ,b=', b
+temp = a
+a = b
+b = temp
+print 'after, a=', a, ' ,b=', b
+c = 6
+d = 8
+print 'before, c,d=', c, d
+c, d = d, c
+print 'after c,d=', c, d
+e = 'hello world'
+f = 3.14
+print 'before, e,f=', e, f
+e, f = f, e
+print 'after, e,f=', e, f
+g, h, i, j, k = 'A', 'K', 'Q', 'J', '10'
+g, h, i, j, k = g, i, k, h, j
+print 'result=', g, h, i, j, k
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+str1 = 'abcdefg1234567890'
+print str1[len(str1) - 1]
+# print str1[len(str1)]
+print str1[-len(str1)], str1[0]
+print str1[2:10]
+str2 = "www.uuu.com.tw"
+return1 = str2.split(".")
+print type(return1)
+print return1
+print "@".join(return1)
+print "".join(return1)
+print str1+str2
+print str2*5
+print 5*str2
+print 'abc' in str1, 'ABC' not in str1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+str1 = 'abcdeABCDE12345'
+str2 = str1 * 5
+print str2[1:20:2]
+print len(str1), len(str2), len(str2[1:30:3])
+print min(str2), max(str2)
+print str2.index('a'), str2.index('A'), str2.index('1')
+#print str2.index('X')
+print str2.count('X'), str2.count('a')
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+str1 = "ABCDE"
+list1 = ['A', 'B', 'C', 'D', 'E']
+print type(str1), len(str1), str1[1]
+print type(list1), len(list1), list1[1]
+list1[1]='b'
+print list1
+#str1[1]='b'
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+str1 = "ABCDE"
+int1 = 100
+list1 = ['A', 'B', 'C', 'D', 'E']
+print type(str1), len(str1), str1[1]
+print type(list1), len(list1), list1[1]
+list1[1] = 'b'
+print list1
+# str1[1]='b'
+print hex(id(str1)), hex(id(int1))
+int1 = 200
+str1 = "AbCDE"
+print hex(id(str1)), hex(id(int1))

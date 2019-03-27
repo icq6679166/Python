@@ -1,0 +1,155 @@
+install python27
+check
+c:\Python27
+c:\Python27\Scripts
+
+open a new cmd
+
+set path
+
+pip list
+
+python
+
+>>> ==> type ==> quit()
+
+~~~~~2~~~~~~
+pip list
+pip install -U setuptools
+python -m pip install -U pip
+# https://www.scipy.org/
+
+pip install numpy
+
+
+pip show numpy
+
+pip search tensorflow
+
+pip install virtualenv
+
+pip list
+~~~~~~~~~~
+Package    Version
+---------- -------
+numpy      1.16.2
+pip        19.0.3
+setuptools 40.8.0
+virtualenv 16.4.3
+
+~~~~~~
+
+https://software.intel.com/en-us/mkl
+
+pip download numpy ==> download only
+
+mkdir c:\python_venv
+
+cd c:\python_venv
+
+virtualenv my_env1
+
+my_env1\Scripts\activate
+deactivate
+
+my_env1\Scripts\activate
+pip list
+deactivate
+pip list
+
+my_env1\Scripts\activate
+pip install pyserial
+pip list
+deactivate
+
+
+deactivate
+
+
+pip install virtualenvwrapper virtualenvwrapper-win
+
+mkvirtualenv my_env2
+pip list
+deactivate
+
+workon my_env2
+
+workon
+
+~~~~~~~~~~~~~~~~~~~~
+1) 
+C:\Users\Admin\PycharmProjects\Py27Lab
+
+Existing intepreter
+...
+System Intepreter
+OK
+Create
+==> check External Library
+=====> C:\python27\python.exe
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+demo1_check_env
+
+import numpy
+print numpy.__version__
+
+
+l1 = [1, 2, 3, 4, 5]
+l2 = [6, 7, 8, 9, 10]
+
+print type(l1), type(l2)
+print l1 + l2
+a1 = numpy.array(l1)
+a2 = numpy.array(l2)
+print type(a1), type(a2)
+print a1 + a2
+
+
+https://github.com/adobe-fonts/source-code-pro
+
+~~~~~~~~~~~~~~
+demoObj = {}
+demoObj['course']='bdpy'
+demoObj['instructor']='mark ho'
+demoObj['duration']='35hr'
+demoObj['location']='Taipei'
+print demoObj
+~~~~~~~~~~~~~~~~~~
+demoObj = {'course': 'bdpy', 'instructor': 'mark ho', 'duration': '35hr', 'location': 'Taipei'}
+print demoObj
+~~~~~~~~~~~~~~~~~~~~~
+demo3_ide
+def getDigit(x):
+    returnDigit = 0
+    while x > 0:
+        x /= 10
+        returnDigit += 1
+    return returnDigit
+
+
+print getDigit(1000)
+print getDigit(2 ** 10)
+print getDigit(2 ** 32)
+print getDigit(2 ** 64)
+print getDigit(2 ** 512)
+print 2 ** 512
+
+~~~~~~~~~~~~~~~~~~~~
+def getDigit(x):
+    returnDigit = 0
+    while x > 0:
+        x /= 10
+        returnDigit += 1
+        return returnDigit
+
+
+print getDigit(1000)
+print getDigit(2 ** 10)
+print getDigit(2 ** 32)
+print getDigit(2 ** 64)
+print getDigit(2 ** 512)
+print 2 ** 512
+
+
+

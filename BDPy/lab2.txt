@@ -1,0 +1,35 @@
+Custom install location
+C:\Python36
+
+File/New Project
+Py36Lab
+... System Intepreter
+
+Open New Window
+
+def getDigit(x):
+    returnDigit = 0
+    while x > 0:
+        x /= 10
+        returnDigit += 1
+    return returnDigit
+
+
+print(getDigit(1000))
+print(getDigit(2 ** 10))
+print(getDigit(2 ** 32))
+print(getDigit(2 ** 64))
+print(getDigit(2 ** 512))
+print(2 ** 512)
+~~~~~~~
+print(4 / 2, 5 / 2, 6 / 2, 7 / 2)
+print(4 // 2, 5 // 2, 6 // 2, 7 // 2)
+print(4 / 2.0, 5.0 / 2, 6.0 / 2.0, 7 / 2)
+print(4 // 2.0, 5.0 // 2, 6.0 // 2.0, 7 // 2)
+
+~~~~~~
+print (round(2.1), round(3.1), round(4.1), round(5.1))
+print (round(2.4), round(3.4), round(4.4), round(5.4))
+print (round(2.5), round(3.5), round(4.5), round(5.5))
+print (round(2.6), round(3.6), round(4.6), round(5.6))
+print(round(1357.5), round(246.5), round(1357.4), round(246.6))
