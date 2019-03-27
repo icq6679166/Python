@@ -1,0 +1,10 @@
+digraph {
+	A [label=Lexus]
+	B [label=Toyota]
+	C [label="馬自達"]
+	D
+	A -> B [label="same holding company"]
+	A -> C [label="racing competitor"]
+	B -> C [label="大眾市場"]
+	B -> D
+}

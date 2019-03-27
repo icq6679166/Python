@@ -1,0 +1,1 @@
+sample_message = "demo_pkg sample log:"
