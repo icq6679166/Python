@@ -1,0 +1,13 @@
+digraph {
+	graph [bgcolor="#C0FFEE" fillcolor="#880022" fontcolor="#882200" fontsize=24 label="改變型態" rankdir=TB]
+	node [color=black fillcolor="#FFEEC0" fontcolor=green fontname=Consolas shape=box style=filled]
+	edge [arrowhead=open color="#220088" fontcolor="#008822" fontname=Courier fontsize=24 style=dotted]
+	A [label=Lexus]
+	B [label=Toyota]
+	C [label="馬自達"]
+	D
+	A -> B [label="same holding company"]
+	A -> C [label="racing competitor"]
+	B -> C [label="大眾市場"]
+	B -> D
+}
