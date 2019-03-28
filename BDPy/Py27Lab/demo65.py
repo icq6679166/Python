@@ -50,3 +50,36 @@ edges = [(('A', 'B'), {'label': 'same holding company'}),
 g3 = digraph()
 g3 = add_edges(add_nodes(g3, nodes2), edges)
 g3.render('graph//demo65_g3')
+styles = {'graph': {'label': u'改變型態',
+                    'fontsize': '24',
+                    'fontcolor': '#882200',
+                    'bgcolor': '#C0FFEE',
+                    'rankdir': 'TB',
+                    'fillcolor': '#880022'},
+          'nodes': {
+              'fontname': 'Consolas',
+              'shape': 'box',
+              'fontcolor': 'green',
+              'color': 'black',
+              'style': 'filled',
+              'fillcolor': '#FFEEC0'
+          },
+          'edges': {
+              'style': 'dotted',
+              'color': '#220088',
+              'arrowhead': 'open',
+              'fontname': 'Courier',
+              'fontsize': '24',
+              'fontcolor': '#008822'
+          }}
+
+
+def apply_style(graph, styles):
+    graph.graph_attr.update(('graph' in styles and styles['graph']) or {})
+    graph.node_attr.update(('nodes' in styles and styles['nodes']) or {})
+    graph.edge_attr.update(('edges' in styles and styles['edges']) or {})
+    return graph
+
+
+g4 = apply_style(g3, styles)
+g4.render('graph//demo65_g4')
