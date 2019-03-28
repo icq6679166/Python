@@ -15,9 +15,10 @@ for i in range(len(sample_data)):
     sampleIcon = folium.Icon(color='green', icon='info-sign')
     folium.Marker(coordinate, icon=sampleIcon, popup=unicode(message, 'utf-8')).add_to(map_osm)
 
-current = [25.052507, 121.544195]
-current2 = [25.055381, 121.618717]
-folium.CircleMarker(current, radius=50, popup='here we are', fill_color='#C0FFEE').add_to(map_osm)
-folium.Circle(current2, radius=200, popup='here we are', fill_color='#FFCFEE').add_to(map_osm)
+
+current = [25.052151, 121.543881]
+current2 = [25.052287, 121.606749]
+folium.CircleMarker(current, radius=50, popup='here we are', fill_color='#C0FFEE', color='#FFC0EE').add_to(map_osm)
+folium.Circle(current2, radius=200, popup='here we are', fill_color='#FFC0EE', color='#C0FFEE').add_to(map_osm)
 
 map_osm.save("map\\demo86.html")

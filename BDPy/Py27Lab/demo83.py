@@ -17,7 +17,6 @@ def init():
     line.set_ydata(np.ma.array(x, mask=True))
     return line,
 
-
-ani = animation.FuncAnimation(fig, animate, np.arange(1, 400, 0.01), init_func=init,
+ani = animation.FuncAnimation(fig, animate, np.arange(1,400, 0.01), init_func=init,
                               interval=10, blit=True)
 plt.show()

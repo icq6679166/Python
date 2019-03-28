@@ -1,25 +1,18 @@
 class Emp:
     pass
-
-
 class Engineer(Emp):
     pass
-
-
 class PM(Emp):
     pass
-
-
 class HR(Emp):
     pass
-
 
 emp1 = Emp()
 eng1 = Engineer()
 pm1 = PM()
 hr1 = HR()
-staffs = [("emp1", "emplyee1"), (eng1, "engineer1"),
-          (pm1, "Product Manager"), (hr1, "Human Resource1")]
+staffs = [(emp1,"Emplyee1"),(eng1, "Engineer1"),
+          (pm1,"Product Manager"),(hr1, "Human Resource1")]
 classes = [Emp, Engineer, PM, HR]
 
 for staff, name in staffs:

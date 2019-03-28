@@ -10,3 +10,4 @@ print data1.columns
 print data1['1960'].mean()
 data1['join'] = data1['1960']+data1['1961']
 print data1.columns
+

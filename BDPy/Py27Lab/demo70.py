@@ -11,7 +11,6 @@ class Team:
     @staticmethod
     def calculate(x, y):
         return x ** y
-
     @classmethod
     def get_member(cls):
         return cls.member
