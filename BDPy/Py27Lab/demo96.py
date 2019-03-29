@@ -13,7 +13,7 @@ def foo(count, name):
 
 @app.route('/mypath/<float:weight>/<path:goal>')
 def bar(goal, weight):
-    str2 = 'float=%f, string=%s' % (weight, goal)
+    str2 = 'float=%f, string=%s' % (weight,goal)
     return str2
 
 

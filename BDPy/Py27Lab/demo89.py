@@ -12,7 +12,8 @@ start_time = time.time()
 for i in range(1000):
     for e in employees:
         connection1.execute(sql_dml, (e['NAME'], e['AGE'], e['DEPT'], e['ADDR']))
-    connection1.commit()  # 6.411
+        connection1.commit()  # 19.42
+    #connection1.commit()  # 6.437
 #connection1.commit()#0.016
 connection1.close()
 print("---%s seconds---" % (time.time() - start_time))
