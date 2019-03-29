@@ -2,17 +2,14 @@ import sqlite3
 
 connection1 = sqlite3.connect('demo87.sqlite')
 print('open db success')
-drop_sql = '''
+drop_and_create_sql = '''
 DROP TABLE IF EXISTS EMPLOYEE;
-'''
-create_sql = '''
 CREATE TABLE EMPLOYEE
-(ID INT PRIMARY KEY,
+(ID INTEGER PRIMARY KEY AUTOINCREMENT,
 NAME TEXT NOT NULL,
 AGE INT NOT NULL,
 DEPT INT,
 ADDRESS CHAR(50));
 '''
-connection1.execute(drop_sql)
-connection1.execute(create_sql)
+connection1.executescript(drop_and_create_sql)
 connection1.close()

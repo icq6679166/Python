@@ -1,0 +1,15 @@
+from pyspark import SparkContext
+
+sc = SparkContext("local", "spark_lab1")
+rdd1 = sc.textFile("data\\README.md")
+rdd1.cache()
+print "total content:", rdd1.collect()
+print "line count:", rdd1.count()
+print "first entry", rdd1.first()
+print "first 7 entries", rdd1.take(7)
+print "lines contain a:", rdd1.filter(lambda l: "a" in l).count()
+print "take 4 sampes:", rdd1.takeSample(False, 4)
+# rdd1.filter(lambda l: "Spark" in l).saveAsTextFile('data\\RDD.md')
+print "Map for rdd1:", rdd1.map(lambda l: l.split('\\s+')).collect()
+print "Flat map for rdd1:", rdd1.flatMap(lambda l: l.split('\\s+')).collect()
+sc.stop()
